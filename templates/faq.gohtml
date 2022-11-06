@@ -1,0 +1,16 @@
+
+{{template "layout" .}}
+{{define "page"}}
+
+    {{range .}}
+
+        {{template "faq" .}}
+    {{end}}
+{{end}}
+
+{{define "faq"}}
+    <details>
+        <summary>{{.Question}}</summary>
+        {{.Answer}}</details>
+
+{{end}}
